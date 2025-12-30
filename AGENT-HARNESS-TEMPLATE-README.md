@@ -19,27 +19,41 @@ A reusable template for building long-running autonomous agents using the Claude
 
 ---
 
+## Requirements
+
+| Requirement | Version | Check Command |
+|-------------|---------|---------------|
+| **Python** | **3.10+** | `python3 --version` |
+| **Claude Code CLI** | Latest | `claude --version` |
+| **claude-code-sdk** | ≥0.0.25 | `pip3 show claude-code-sdk` |
+
+> **⚠️ CRITICAL:** Python 3.10 or higher is **required**. The SDK will not install on Python 3.9 or lower. If your `python3 --version` shows 3.9, use `python3.11` explicitly or install a newer Python version.
+
 ## Quick Start
 
 ```bash
-# 1. Install Claude Code SDK
-pip install claude-code-sdk
+# 1. Verify Python version (MUST be 3.10+)
+python3 --version  # If 3.9 or lower, use python3.11 instead
 
-# 2. Copy template to your project
-cp -r template/ /path/to/your/project/
+# 2. Install Claude Code SDK
+pip3 install claude-code-sdk
 
-# 3. Edit the application specification
-vim /path/to/your/project/prompts/app_spec.txt
+# 3. Copy template to your project (or use create-project.sh)
+./create-project.sh my-new-project
+cd my-new-project
 
-# 4. Authenticate (choose ONE option)
+# 4. Edit the application specification
+vim prompts/app_spec.txt
+
+# 5. Authenticate (choose ONE option)
 #    Option A: Claude Pro/Max subscription (recommended)
 claude login
 
 #    Option B: API key (pay-as-you-go)
 export ANTHROPIC_API_KEY='sk-ant-...'
 
-# 5. Run the agent
-python /path/to/your/project/autonomous_agent.py --project-dir ./my-project
+# 6. Run the agent
+python3 autonomous_agent.py --project-dir ./my-app
 ```
 
 **Authentication:** Supports both `claude login` (subscription) AND `ANTHROPIC_API_KEY` (API). Package `claude-code-sdk` imports as `claude_code_sdk`.
@@ -101,7 +115,7 @@ template/
 ### Command Line Options
 
 ```bash
-python autonomous_agent.py --help
+python3 autonomous_agent.py --help
 
 Options:
   --project-dir PATH    Project directory (default: ./autonomous_demo_project)
@@ -114,13 +128,13 @@ Options:
 
 ```bash
 # Fresh start
-python autonomous_agent.py --project-dir ./my-app
+python3 autonomous_agent.py --project-dir ./my-app
 
 # Continue existing project
-python autonomous_agent.py --project-dir ./my-app
+python3 autonomous_agent.py --project-dir ./my-app
 
 # Limit iterations for testing
-python autonomous_agent.py --project-dir ./my-app --max-iterations 5
+python3 autonomous_agent.py --project-dir ./my-app --max-iterations 5
 ```
 
 ---

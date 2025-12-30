@@ -4,8 +4,66 @@
 # Usage:
 #   ./create-project.sh my-new-project
 #   ./create-project.sh /absolute/path/to/project
+#
+# Requirements:
+#   - Python 3.10+ (check with: python3 --version)
+#   - Git
 
 set -e
+
+# =============================================================================
+# PYTHON VERSION CHECK (REQUIRED: 3.10+)
+# =============================================================================
+find_python() {
+    # Try versioned Python commands first (most explicit)
+    for cmd in python3.13 python3.12 python3.11 python3.10 python3 python; do
+        if command -v "$cmd" &> /dev/null; then
+            # Check if this version is >= 3.10
+            MAJOR=$($cmd -c 'import sys; print(sys.version_info.major)' 2>/dev/null)
+            MINOR=$($cmd -c 'import sys; print(sys.version_info.minor)' 2>/dev/null)
+
+            if [ "$MAJOR" = "3" ] && [ "$MINOR" -ge 10 ]; then
+                PYTHON_CMD="$cmd"
+                PYTHON_VERSION="$MAJOR.$MINOR"
+                return 0
+            fi
+        fi
+    done
+    return 1
+}
+
+check_python_version() {
+    if find_python; then
+        echo "✓ Python $PYTHON_VERSION detected ($PYTHON_CMD)"
+    else
+        echo "ERROR: Python 3.10+ not found."
+        echo ""
+
+        # Show what versions ARE available
+        echo "Available Python versions on your system:"
+        for cmd in python3 python python3.9 python3.8; do
+            if command -v "$cmd" &> /dev/null; then
+                VER=$($cmd --version 2>&1)
+                echo "  - $cmd: $VER"
+            fi
+        done
+
+        echo ""
+        echo "This template requires Python 3.10 or higher."
+        echo ""
+        echo "Options to install Python 3.10+:"
+        echo "  1. Download from: https://www.python.org/downloads/"
+        echo "  2. Homebrew (macOS): brew install python@3.11"
+        echo "  3. pyenv: pyenv install 3.11 && pyenv local 3.11"
+        echo "  4. apt (Ubuntu/Debian): sudo apt install python3.11"
+        echo ""
+        echo "After installing, run this script again."
+        exit 1
+    fi
+}
+
+# Run the check
+check_python_version
 
 PROJECT_NAME="${1:-my-autonomous-project}"
 

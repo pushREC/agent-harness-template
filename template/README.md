@@ -2,14 +2,30 @@
 
 A reusable template for building long-running autonomous agents using Claude Agent SDK.
 
+## Requirements
+
+| Requirement | Version | Check Command |
+|-------------|---------|---------------|
+| **Python** | 3.10+ | `python3 --version` |
+| **Claude Code CLI** | Latest | `claude --version` |
+| **claude-code-sdk** | ≥0.0.25 | `pip3 show claude-code-sdk` |
+
+> **⚠️ IMPORTANT:** This template requires Python 3.10 or higher. If `python3 --version` shows 3.9 or lower, see [Python Installation](#python-installation) below.
+
 ## Quick Start
 
 ```bash
-# Make sure you're logged into Claude Code
+# 1. Verify Python version (MUST be 3.10+)
+python3 --version
+
+# 2. Install the SDK
+pip3 install claude-code-sdk
+
+# 3. Authenticate with Claude
 claude login
 
-# Run the agent (uses your Claude Code subscription)
-python autonomous_agent.py --project-dir ./my-project
+# 4. Run the agent
+python3 autonomous_agent.py --project-dir ./my-project
 ```
 
 ## Usage
@@ -36,7 +52,7 @@ This template implements the **two-agent pattern**:
 ## Command Line Options
 
 ```bash
-python autonomous_agent.py \
+python3 autonomous_agent.py \
   --project-dir ./my-app \      # Project directory
   --max-iterations 5 \          # Limit iterations (optional)
   --model claude-sonnet-4-5 \   # Model to use (optional)
@@ -71,7 +87,7 @@ Two options (choose one):
 claude login
 
 # Then run agents - no API key needed!
-python autonomous_agent.py --project-dir ./my-app
+python3 autonomous_agent.py --project-dir ./my-app
 ```
 
 ### Option 2: API Key (Pay-as-you-go)
@@ -81,16 +97,67 @@ python autonomous_agent.py --project-dir ./my-app
 export ANTHROPIC_API_KEY='sk-ant-...'
 
 # Run agents
-python autonomous_agent.py --project-dir ./my-app
+python3 autonomous_agent.py --project-dir ./my-app
 ```
 
 Get API key from: https://console.anthropic.com/
 
-## Requirements
+---
 
-- Python 3.10+
-- Claude Code CLI: `npm install -g @anthropic-ai/claude-code`
-- Claude Agent SDK: `pip install claude-code-sdk`
+## Python Installation
+
+If your system Python is older than 3.10, here's how to install a newer version:
+
+### macOS (Homebrew)
+
+```bash
+# Install Python 3.11
+brew install python@3.11
+
+# Verify installation
+python3.11 --version
+
+# Use it to run the agent
+python3.11 autonomous_agent.py --project-dir ./my-app
+```
+
+### macOS/Linux (pyenv)
+
+```bash
+# Install pyenv
+curl https://pyenv.run | bash
+
+# Install Python 3.11
+pyenv install 3.11
+
+# Set as local version for this project
+pyenv local 3.11
+
+# Now python3 will use 3.11
+python3 --version
+```
+
+### Windows
+
+1. Download Python 3.11+ from https://www.python.org/downloads/
+2. During installation, check "Add Python to PATH"
+3. Open new terminal and verify: `python --version`
+
+### Virtual Environment (Any Platform)
+
+```bash
+# Create venv with Python 3.11
+python3.11 -m venv venv
+
+# Activate it
+source venv/bin/activate  # Linux/macOS
+# OR: venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
 
 ## Based On
 

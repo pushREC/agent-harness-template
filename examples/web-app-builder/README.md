@@ -9,7 +9,7 @@ Example specification for building a task manager web application.
 cp app_spec.txt /path/to/project/prompts/app_spec.txt
 
 # Run the agent
-python autonomous_agent.py --project-dir ./task-manager
+python3 autonomous_agent.py --project-dir ./task-manager
 ```
 
 ## What Gets Built

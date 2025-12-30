@@ -9,7 +9,7 @@ Example specification for building a REST API service with FastAPI.
 cp app_spec.txt /path/to/project/prompts/app_spec.txt
 
 # Run the agent
-python autonomous_agent.py --project-dir ./product-api
+python3 autonomous_agent.py --project-dir ./product-api
 ```
 
 ## What Gets Built

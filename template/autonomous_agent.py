@@ -7,10 +7,33 @@ A minimal harness demonstrating long-running autonomous coding with Claude.
 This script implements the two-agent pattern (initializer + coding agent) and
 incorporates all the strategies from the long-running agents guide.
 
+REQUIRES: Python 3.10+
+
 Example Usage:
-    python autonomous_agent.py --project-dir ./claude_clone_demo
-    python autonomous_agent.py --project-dir ./claude_clone_demo --max-iterations 5
+    python3 autonomous_agent.py --project-dir ./claude_clone_demo
+    python3 autonomous_agent.py --project-dir ./claude_clone_demo --max-iterations 5
 """
+
+import sys
+
+# =============================================================================
+# PYTHON VERSION CHECK (REQUIRED: 3.10+)
+# =============================================================================
+if sys.version_info < (3, 10):
+    print("=" * 60)
+    print("ERROR: Python 3.10 or higher is required.")
+    print("=" * 60)
+    print(f"\nYou are running Python {sys.version_info.major}.{sys.version_info.minor}")
+    print(f"Full version: {sys.version}")
+    print("\nTo fix this:")
+    print("  1. Install Python 3.10+: https://www.python.org/downloads/")
+    print("  2. Use: python3.10 autonomous_agent.py (or python3.11, etc.)")
+    print("  3. Or create a virtual environment with Python 3.10+")
+    print("\nOn macOS with Homebrew:")
+    print("  brew install python@3.11")
+    print("  python3.11 autonomous_agent.py --project-dir ./my-app")
+    print("=" * 60)
+    sys.exit(1)
 
 import argparse
 import asyncio

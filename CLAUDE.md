@@ -43,7 +43,7 @@ To test changes to the template:
 ```bash
 cd template/
 export ANTHROPIC_API_KEY=your-key
-python autonomous_agent.py --project-dir /tmp/test-project --max-iterations 2
+python3 autonomous_agent.py --project-dir /tmp/test-project --max-iterations 2
 ```
 
 ## Related Resources
