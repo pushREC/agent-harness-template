@@ -1,0 +1,2 @@
+# Requires Python 3.10+
+claude-code-sdk>=0.0.25

@@ -1,0 +1,127 @@
+# Application Specification Template
+
+## Overview
+
+[Describe your application in 2-3 sentences. What does it do? Who is it for?]
+
+Example: "A task management application that helps individuals track their daily
+tasks with categories, priorities, and due dates. Users can create, edit, delete,
+and mark tasks as complete."
+
+## Technology Stack
+
+### Frontend
+- Framework: [React / Vue / Svelte / etc.]
+- UI Library: [Tailwind CSS / Material UI / etc.]
+- State Management: [React Query / Zustand / etc.]
+
+### Backend (if applicable)
+- Runtime: [Node.js / Python / etc.]
+- Framework: [Express / FastAPI / etc.]
+- Database: [PostgreSQL / SQLite / MongoDB / etc.]
+
+## Features
+
+### Core Features (Must Have)
+
+1. **[Feature Name]**
+   - Description: [What it does]
+   - User actions: [What the user can do]
+   - Expected behavior: [What should happen]
+
+2. **[Feature Name]**
+   - Description: [What it does]
+   - User actions: [What the user can do]
+   - Expected behavior: [What should happen]
+
+### Secondary Features (Should Have)
+
+3. **[Feature Name]**
+   - Description: [What it does]
+   - User actions: [What the user can do]
+   - Expected behavior: [What should happen]
+
+### Nice to Have Features
+
+4. **[Feature Name]**
+   - Description: [What it does]
+   - User actions: [What the user can do]
+   - Expected behavior: [What should happen]
+
+## UI/UX Requirements
+
+### Design Style
+- Color scheme: [Primary color, secondary colors]
+- Typography: [Font family, sizes]
+- Overall aesthetic: [Modern, minimal, playful, professional, etc.]
+
+### Layout
+- [Describe main page layouts]
+- [Responsive requirements]
+
+### User Experience
+- [Page load expectations]
+- [Interaction patterns]
+- [Accessibility requirements]
+
+## Non-Functional Requirements
+
+### Performance
+- [Response time expectations]
+- [Concurrent user support]
+
+### Security
+- [Authentication requirements]
+- [Data protection needs]
+
+## Constraints
+
+- [Any technical limitations]
+- [Platform requirements]
+- [Browser support]
+
+---
+
+## Example: Task Manager App
+
+Replace this section with your actual specification.
+
+### Overview
+A simple task management application for personal productivity. Users can
+create tasks with titles, descriptions, due dates, and priorities.
+
+### Technology Stack
+- Frontend: React + Vite + Tailwind CSS
+- Backend: Node.js + Express
+- Database: SQLite
+
+### Core Features
+
+1. **Task Creation**
+   - User clicks "Add Task" button
+   - Modal appears with form fields
+   - User enters title (required), description, due date, priority
+   - User clicks "Save" to create task
+   - Task appears in the list
+
+2. **Task List Display**
+   - All tasks displayed in a responsive grid/list
+   - Shows title, due date, priority badge
+   - Overdue tasks highlighted in red
+
+3. **Task Completion**
+   - Checkbox next to each task
+   - Click checkbox to mark complete
+   - Completed tasks show strikethrough
+   - Can filter to hide completed
+
+4. **Task Deletion**
+   - Delete button on each task
+   - Confirmation dialog appears
+   - Task removed after confirmation
+
+### UI Requirements
+- Clean, minimal design
+- Blue primary color (#3B82F6)
+- White background, gray secondary elements
+- Mobile-responsive layout

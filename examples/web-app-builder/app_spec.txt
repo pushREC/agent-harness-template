@@ -1,0 +1,122 @@
+# Task Manager Web Application
+
+## Overview
+
+A modern task management application for personal productivity. Users can
+create, organize, and track tasks with categories, priorities, due dates,
+and completion status.
+
+## Technology Stack
+
+### Frontend
+- Framework: React 18 with Vite
+- UI Library: Tailwind CSS
+- State: React Query for server state
+
+### Backend
+- Runtime: Node.js 20
+- Framework: Express.js
+- Database: SQLite with better-sqlite3
+
+## Features
+
+### Core Features (Must Have)
+
+1. **Task Creation**
+   - User clicks "New Task" button
+   - Modal opens with form: title, description, due date, priority
+   - Title is required, others optional
+   - Priority options: High, Medium, Low
+   - Save creates task and closes modal
+   - Task appears in list immediately
+
+2. **Task List Display**
+   - Tasks displayed in a responsive card grid
+   - Each card shows: title, due date, priority badge, completion checkbox
+   - Cards sorted by: priority (high first), then due date
+   - Overdue tasks have red border/badge
+
+3. **Task Completion**
+   - Click checkbox to toggle completion
+   - Completed tasks show strikethrough title
+   - Completed tasks move to bottom of list
+   - Toggle to hide/show completed tasks
+
+4. **Task Editing**
+   - Click task card to open edit modal
+   - Same form as creation
+   - Pre-filled with current values
+   - Save updates, Cancel discards changes
+
+5. **Task Deletion**
+   - Delete button on each task card
+   - Confirmation dialog: "Delete this task?"
+   - Confirm removes task permanently
+
+### Secondary Features (Should Have)
+
+6. **Category/Tags**
+   - Tasks can have multiple tags
+   - Tags shown as colored pills on cards
+   - Filter by tag in sidebar
+
+7. **Search**
+   - Search bar at top of page
+   - Filters tasks by title/description
+   - Live filtering as you type
+
+8. **Due Date Filtering**
+   - Buttons: Today, This Week, Overdue
+   - Filters task list by due date
+
+### Nice to Have
+
+9. **Drag and Drop**
+   - Reorder tasks by dragging
+   - Persist custom order
+
+10. **Dark Mode**
+    - Toggle in header
+    - Persists in localStorage
+
+## UI/UX Requirements
+
+### Design Style
+- Primary: Blue (#3B82F6)
+- Background: White (#FFFFFF)
+- Text: Gray-900 (#111827)
+- Accents: Blue-50, Blue-100 for hover states
+- Modern, clean, minimal aesthetic
+- Rounded corners (8px cards, 4px buttons)
+
+### Layout
+- Header: App name, search bar, new task button, dark mode toggle
+- Main: Grid of task cards (3 columns desktop, 1 mobile)
+- Sidebar (optional): Categories/filters
+
+### Responsive
+- Desktop: 3-column grid
+- Tablet: 2-column grid
+- Mobile: Single column, hamburger menu
+
+### Interactions
+- Hover states on all interactive elements
+- Smooth transitions (150-200ms)
+- Loading spinners for async operations
+- Toast notifications for success/error
+
+## Non-Functional Requirements
+
+### Performance
+- Page load < 1 second
+- Task operations instant (optimistic updates)
+
+### Accessibility
+- Keyboard navigable
+- ARIA labels on interactive elements
+- Focus indicators
+
+## Ports
+
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3001
