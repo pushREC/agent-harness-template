@@ -12,6 +12,23 @@ A reusable template for building long-running autonomous agents using Claude Age
 
 > **⚠️ IMPORTANT:** This template requires Python 3.10 or higher. If `python3 --version` shows 3.9 or lower, see [Python Installation](#python-installation) below.
 
+### Verify Setup
+
+Before running the agent, verify all prerequisites are installed:
+
+```bash
+./scripts/preflight.sh
+```
+
+This script checks:
+- Python 3.10+ installed
+- Node.js installed (for browser automation)
+- Git installed
+- Claude authentication configured
+- claude-code-sdk package installed
+
+**Fix any errors before proceeding.** Warnings are informational.
+
 ## Quick Start
 
 ```bash
@@ -101,6 +118,42 @@ python3 autonomous_agent.py --project-dir ./my-app
 ```
 
 Get API key from: https://console.anthropic.com/
+
+---
+
+## Known Limitations
+
+### Browser Automation
+
+The agent uses Puppeteer MCP for browser testing. On first run, you may need to grant permissions when prompted. If you see permission errors for MCP tools, restart the agent session.
+
+### Git Remote
+
+After creating a project with the template, your git remote may not be configured. To push your work:
+
+```bash
+# Option 1: Create repo manually
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
+
+# Option 2: Use GitHub CLI
+gh repo create my-project --private --source=. --remote=origin --push
+```
+
+### Sandbox Restrictions
+
+The agent runs in a security sandbox. Some commands are restricted:
+- **Blocked:** `rm`, `rmdir` (prevents accidental deletion)
+- **Blocked:** `sudo`, `su` (no privilege escalation)
+- **Restricted:** `pkill` (only dev processes: node, npm, python, etc.)
+
+See `GUARDRAILS.md` for the complete list of allowed commands.
+
+### Session Duration
+
+Each agent session typically runs 15-30 minutes before needing context refresh. The harness automatically restarts with fresh context. For complex applications:
+- **Session 1 (Initializer):** May take 10-20+ minutes to generate 50 features
+- **Sessions 2+:** Typically 5-15 minutes per feature
 
 ---
 
