@@ -1,3 +1,8 @@
+---
+created: 2025-12-31
+tags: [type/project]
+---
+
 # Agent Guardrails
 
 This document defines the security boundaries and available commands for the autonomous agent.

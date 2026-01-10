@@ -1,3 +1,8 @@
+---
+created: 2025-12-29
+tags: [type/project]
+---
+
 ## YOUR ROLE - CODING AGENT
 
 You are continuing work on a long-running autonomous development task.

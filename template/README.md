@@ -1,3 +1,8 @@
+---
+created: 2025-12-31
+tags: [type/project]
+---
+
 # Autonomous Agent Template
 
 A reusable template for building long-running autonomous agents using Claude Agent SDK.

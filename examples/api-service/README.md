@@ -1,3 +1,8 @@
+---
+created: 2025-12-30
+tags: [type/project]
+---
+
 # API Service Example
 
 Example specification for building a REST API service with FastAPI.

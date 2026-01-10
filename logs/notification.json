@@ -1,0 +1,98 @@
+[
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your attention",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "cc2bb8cd-8ee0-47e5-a343-d98ca5468311",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/cc2bb8cd-8ee0-47e5-a343-d98ca5468311.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "334aae5e-685f-4993-b4e6-5a57fdd53f60",
+    "transcript_path": "/Users/robertzinke/.claude/projects/-Users-robertzinke-pushrec-vault/334aae5e-685f-4993-b4e6-5a57fdd53f60.jsonl",
+    "cwd": "/Users/robertzinke/pushrec-vault/1-Projects/agent-harness-template",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  }
+]

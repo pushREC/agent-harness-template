@@ -1,3 +1,8 @@
+---
+created: 2025-12-30
+tags: [type/project]
+---
+
 # Web App Builder Example
 
 Example specification for building a task manager web application.

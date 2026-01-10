@@ -1,4 +1,11 @@
 ---
+tags:
+- type/task
+---
+---
+
+[[3-Resources/anchors/status-active]]
+
 created: 2025-12-28
 tags:
   - type/tasks

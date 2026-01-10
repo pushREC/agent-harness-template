@@ -1,3 +1,8 @@
+---
+created: 2025-12-30
+tags: [type/project]
+---
+
 # Agent Harness Template - Claude Instructions
 
 ## Project Overview
